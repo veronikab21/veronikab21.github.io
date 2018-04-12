@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script src="js/eco.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <header>
+    <h1>Experience the world of Audi</h1>
+    <h2>Experience our theme worlds and be fascinated.</h2>
+  </header>
+  <article>
+    <h2>New quality of life</h2>
+    <p><em>The way we get from A to B will change over the next few years. Alternative drive systems will play an important part in that, but so too will other innovative technologies that enable automatic and autonomous driving. This transformation is happening hand in hand with the development of urban conurbations. </em></p>
+    <p>Digitalisation, networking and Big Data have become key concepts of the 21st century, and they are by no means fully developed. On the contrary: they will continue to grow over the next few years, especially in large urban areas. Urban planning and transport networks are part of this overall concept, and with them, modern means of transportation. Concept vehicles like the Audi e-tron quattro concept and Audi e-tron Sportback concept are already providing an insight into how the future of mobility might soon look at Audi. And what they are showing is that modern vehicles are no longer merely a means of getting from A to B. They have become mobile devices that assist their drivers with a variety of systems while they are on the move. Audi is also working to develop this technology, so as to relieve drivers of more and more responsibility while driving – and then at a certain point to bring that into series production.</p>
+    <p>Making this happen requires vehicles to have complex electronic components that can collect and evaluate data and derive actions from it. Cameras, sensors and the central control unit (zFas) are constantly talking to each other. The data they collect is processed and shown to drivers and passengers using infotainment components. This real-time communication model is being extended in tomorrow’s mobility so that not only vehicles and passengers communicate with each another, but vehicles and their surroundings, vehicles with vehicles – and even vehicles with their urban environments. This may seem a long way off, but there are several projects already dealing with the various disciplines involved which will, in the more distant future, be brought together as one.</p>
+    <p>For example, these projects include investigating how we can enhance roads with additional benefits. In the field of electromobility, wireless charging technology (inductive, in other words) offers an exciting opportunity. This technology is currently designed for static charging in a fixed location, but at some point it could become more dynamic – wireless charging roads that charge batteries in suitably equipped electric vehicles as they drive along longer sections equipped with wireless charging plates. Projects like this are already being tested.</p>
+  </article>
+  <div class="video">
+    <h2>2018 Audi A8 - intelligent Drive</h2>
+    <iframe class="yt" src="https://www.youtube.com/embed/TchqhDUbP8w?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="testimonials">
+  <h2>Testimonials</h2>
+  <div class="carousel"> 
+    <div class="card">
+      <img src="img/user1.jpg">
+      <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<cite>George Willson</cite></blockquote>
+    </div>
+    <div class="card">
+        <img src="img/user2.jpg">
+        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<cite>Alice Yu</cite></blockquote>
+    </div>
+    <div class="card">
+        <img src="img/user3.jpg">
+        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<cite>Jerry Smith</cite></blockquote>
+    </div>
+  </div>
+  </div>
+  <footer>
+    <a class="cta" onclick="eco.open('https://www.audi.com/en.html');">www.audi.com</a>
+    <a onclick="eco.open('https://www.audi.com/en.html');"><img class="logo" src="img/logo.png"></a>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <script type="text/javascript">
+
+  eco.config.app('economist').advertiser('audi').campaign('experience the world of audi').issue('20180430');
+
+  eco.impression.phone('img/tracking-pixel.jpg?ord=[timestamp]');
+  eco.impression.tablet('img/tracking-pixel.jpg?ord=[timestamp]');
+  eco.impression.timestamp('[timestamp]');
+
+  eco.queue.addTask(init);
+
+  //eco.ad.debug();
+  eco.ad.run();
+
+  init();
+  </script>
+</body>
+</html>

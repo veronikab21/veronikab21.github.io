@@ -1,0 +1,417 @@
+@font-face {
+  font-family: exo;
+  src: url(../fonts/Exo2-Light.otf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: exo;
+  width: 100vw;
+}
+
+header {
+  width: 100vw;
+  height: 30vh;
+  background-image: linear-gradient(
+    rgba(20,20,20, .4), 
+    rgba(20,20,20, .4)),
+    url('../img/header.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 0;
+  padding-top: 10vh;
+  font-size: 3em;
+  opacity: 0;
+}
+
+header h2 {
+  opacity: 0;
+}
+
+article {
+  margin: 0 20px;
+  margin-bottom: 60px;
+  font-size: 1.2em;
+}
+
+.video h2 {
+  margin: 30px;
+}
+
+/* width="560" height="315" */
+.yt {
+  margin: 40px auto;
+  display: block;
+  max-width: 100%;
+  min-width: 65%;
+}
+
+.testimonials img {
+  float: left;
+}
+
+.card {
+  padding: 20px 30px;
+  background-color: rgb(238, 238, 238);
+}
+
+.testimonials {
+  margin: auto;
+  padding: 20px;
+  width: 75%;
+  margin-bottom: 110px;
+}
+
+.slick-prev:before, .slick-next:before { 
+  color:grey !important;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  /* width: 500px; */
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  }
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  color: #7a7a7a;
+  }
+
+  blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    }
+     
+    blockquote cite:before {
+    content: "\2014 \2009";
+    }
+
+blockquote {
+  margin-left:150px;
+  padding-right: 0;
+  height: 100%;
+}
+
+footer {
+  background-color: rgb(37, 37, 46);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  transform: translate3d(0, 100%, 0);
+}
+
+.logo {
+  position: absolute;
+  left: -200px;
+  bottom: 23px;
+  height: 55px;
+}
+
+a.cta {
+  color: rgb(178, 178, 202);
+  text-decoration: none;
+  font-size: 1.7em;
+  position: absolute;
+  left: 40px;
+  bottom: 37px;
+  opacity: 0;
+}
+
+@media (max-width: 599px) and (orientation: portrait){
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header h2 {
+    font-size: 0.8em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  article {
+    font-size: 1em;
+    margin: 0 10px 40px 10px;
+  }
+
+  .video h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .yt {
+    margin-top: 20px;
+  }
+  .testimonials {
+    padding-top: 0;
+    margin-bottom: 25%
+  }
+
+  .testimonials img{
+    width: 35%;
+    padding-top: 10px;
+  }
+
+  .card {
+    padding: 5px;
+  }
+
+  blockquote {
+    font-size: 0.8em;
+    margin-left: 17vw;
+    height: 140px;
+  }
+
+  blockquote::before {
+    display: none;
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  .logo {
+    bottom: 25%;
+    height: 45%;
+  }
+  
+  a.cta {
+    font-size: 1.2em;
+    left: 20px;
+    bottom: 33%;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  header h1 {
+    padding-top: 8vh;
+    margin-bottom: 0;
+    font-size: 1.7em;
+  }
+
+  header h2 {
+    font-size: 0.9em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  article {
+    font-size: 1em;
+    margin: 0 10px 40px 10px;
+  }
+
+  .video h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .yt {
+    margin-top: 20px;
+  }
+  .testimonials {
+    padding-top: 0;
+    margin-bottom: 7%;
+    width: 65%;
+  }
+
+  .testimonials img{
+    padding-top: 10px;
+  }
+
+  .card {
+    padding: 5px;
+  }
+
+  blockquote {
+    font-size: 0.8em;
+    margin-left: 130px;
+  }
+
+  blockquote::before {
+    font-size: 4em;
+    left: 5px;
+    top: -10px;
+  }
+
+  blockquote cite {
+    font-size: 0.8em;
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  .logo {
+    bottom: 25%;
+    height: 50%;
+  }
+  
+  a.cta {
+    font-size: 1em;
+    left: 30px;
+    bottom: 30%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 650px) and (orientation: portrait) {
+  blockquote {
+    font-size: 1.2em;
+    margin-left: 17vw;
+    height: 150px;
+  }
+
+  blockquote::before {
+    display: none;
+  }
+
+  .card {
+    padding: 10px 20px;
+  }
+
+  .testimonials img {
+    padding-top: 10px;
+  }
+
+  header h1 {
+    font-size: 2.3em;
+  }
+
+  header h2 {
+    font-size: 1.2em;
+  }
+
+  .yt {
+    min-width: 75%;
+  }
+
+  .logo {
+    height: 45px;
+    bottom: 28px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale3d(1.05, 1.05, 1.05);
+    color: rgb(136, 197, 255);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-delay: 7.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse2 {
+  from {
+    opacity: 0;
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale3d(1.05, 1.05, 1.05);
+    color: rgb(192,192,192);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 0;
+  }
+}
+
+.starPulse {
+  animation-name: pulse2;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+
