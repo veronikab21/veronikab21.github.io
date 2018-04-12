@@ -206,9 +206,10 @@ a.cta {
 
 @media (max-width: 812px) and (orientation: landscape) {
   footer {
-    position: sticky;
+    height : auto;
+    padding: 25px 0;
   }
-  
+
   header {
     height: 50vh;
   }
@@ -266,10 +267,6 @@ a.cta {
 
   blockquote cite {
     font-size: 0.8em;
-  }
-
-  footer {
-    height: 10vh;
   }
 
   .logo {
