@@ -205,6 +205,10 @@ a.cta {
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
+  footer {
+    position: sticky;
+  }
+  
   header {
     height: 50vh;
   }
