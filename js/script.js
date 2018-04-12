@@ -82,5 +82,5 @@ function init() {
   document.querySelector('header h2').classList.add("fadeIn");
   document.querySelector('footer').classList.add("slideInUp");
   document.querySelector('a.cta').classList.add("pulse");
-  setTimeout(animateLogo, 5500);
+  setTimeout(animateLogo, 4500);
 }

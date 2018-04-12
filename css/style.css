@@ -8,6 +8,7 @@ html, body {
   padding: 0;
   font-family: exo;
   width: 100vw;
+  -webkit-text-size-adjust: 100% !important;
 }
 
 header {
@@ -204,9 +205,12 @@ a.cta {
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
+  header {
+    height: 50vh;
+  }
+
   header h1 {
-    padding-top: 8vh;
-    margin-bottom: 0;
+    padding-top: 15vh;
     font-size: 1.7em;
   }
 
@@ -361,7 +365,7 @@ a.cta {
 
 .slideInUp {
   animation-name: slideInUp;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: both;
 }
@@ -387,7 +391,7 @@ a.cta {
 .pulse {
   animation-name: pulse;
   animation-duration: 2s;
-  animation-delay: 7.5s;
+  animation-delay: 6.5s;
   animation-fill-mode: forwards;
 }
 
